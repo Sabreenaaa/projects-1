@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>croissant</title>
+<style> 
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+    }
+    
+    header {
+        background-color: #8c6138;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header .logo {
+            display: flex;
+            align-items: center;
+        }
+    
+    header .logo img {
+            width: 100px; 
+            margin-right: 10px;
+        }
+
+    header .logo h1 {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    nav .signup-btn {
+        background-color: #ffbf80;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+    
+    .hero {
+        background-color: #e6dccd;
+        padding: 60px;
+        text-align: center;
+        color: #8c6138;
+    }
+    
+    .hero .btn {
+        background-color: #8c6138;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+.product-details {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    max-width: 600px;
+}
+
+.product-info h1 {
+    font-size: 2em;
+    color: #6B4F4F;
+}
+
+.subtitle {
+    color: #8A7A75;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #6B4F4F;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: #FFF3C4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.review strong {
+    color: #6B4F4F;
+}
+
+.product-details-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.quantity {
+    margin-bottom: 15px;
+}
+
+.option-btn {
+    background-color: #6B4F4F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.option-btn:hover {
+    background-color: #8A7A75;
+}
+
+.message-card textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+
+.quantity button {
+    background-color: #6B4F4F;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.quantity span {
+    margin: 0 10px;
+}
+
+.add-to-cart-btn {
+    background-color: #8A2D2D;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #A04545;
+}
+
+.order-notice {
+    text-align: center;
+    color: #8A7A75;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.product-details {
+    display: flex;
+    gap: 15px;
+    padding: 25px;
+    max-width: 1200px;
+    margin: auto;
+    border: 1px solid #E0E0E0;  
+    border-radius: 6px;        
+    background-color: #ffffff;   
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+</style>
+   
+</head>
+<body>
+   
+    <header>
+        <div class="logo">
+            <img src="images/PASTRY Logo.png" alt="Logo"> 
+            <h1>Pastry Heaven</h1>
+        </div>
+        <nav>
+
+            <div class="navbar">
+            <ul>
+              
+                <li><a href="#ourmenu">Our Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#signup" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Our Menu</h2>
+            <p>CROISSANT</p>
+          
+        </div>
+    </section>
+
+<section class="product-details">
+    <div class="product-image">
+        <img src="images/pistachio croissant.jpg" alt="pistachio croissant">
+    </div>
+
+    <div class="product-info">
+        <h1>PISTACHIO CROISSANT</h1>
+        <p class="subtitle">Earthy, Nutty, and Irresistibly Buttery — Discover the Unexpected Layers in a Pistachio Croissant!</p>
+        <p class="price">RM15.00</p>
+
+        <div class="review">
+            <p><strong>Zuzue</strong> <span>★★★★★</span></p>
+            <p>This pistachio croissant is an absolute delight for nut lovers! The outer layers are crisp and golden, giving way to a soft, buttery interior that’s perfectly balanced by the pistachio filling. </p>
+        </div>
+
+        <ul class="product-details-list">
+            <li>Size: 5”</li>
+            <li>Availability: In stock</li>
+            <li>Halal-Certified</li>
+        </ul>
+
+        <p class="description">The pistachio filling introduces an earthy sweetness that balances perfectly with the pastry’s light crispiness, while a subtle creaminess enriches each bite. Every layer unfurls a gentle blend of roasted pistachio flavor, mingling with hints of caramelized butter and a delicate almond undertone. Topped with a sprinkle of crushed pistachios, this croissant isn’t just a treat – it’s a journey into the world of refined, nutty decadence.</p>
+
+        <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div>
+
+        <button class="add-to-cart-btn">Add to Cart</button>
+        <p class="order-notice">Order before 12AM to receive it next day</p>
+    </div>
+</section>
+
+    <section class="product-details">
+        <div class="product-image">
+            <img src="images/cream croissant.jpg" alt="cream croissant">
+        </div>
+
+        <div class="product-info">
+            <h1>Crème de Cocoa Croissant</h1>
+            <p class="subtitle">Decadent, Velvety, and Irresistible — Dive Into the Creamy Indulgence of Crème de Cocoa Croissant!</p>
+            <p class="price">RM12.00</p>
+
+            <div class="review">
+                <p><strong>An Hannani</strong> <span>★★★★★</span></p>
+                <p>Each bite is rich, velvety, and just the right amount of indulgent. Whether you’re a fan of chocolate or simply looking for a luxurious twist on a classic croissant, this one is a must-try!</p>
+            </div>
+
+            <ul class="product-details-list">
+                <li>Size: 5”</li>
+                <li>Availability: In stock</li>
+                <li>Halal-Certified</li>
+            </ul>
+
+            <p class="description">Indulge in the Crème de Cocoa Croissant, a masterpiece for those who crave elegance in every bite. This croissant is filled with a smooth, rich cream that adds a luscious, melt-in-your-mouth experience to the buttery pastry layers. Drizzled with a delicate cocoa-infused chocolate glaze on top, it’s both visually tempting and utterly satisfying. The combination of light, flaky layers with the creamy filling and chocolate finish makes it the perfect treat for a morning pick-me-up or an afternoon delight. </p>
+
+            <div class="quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <p class="order-notice">Order before 12AM to receive it next day</p>
+        </div>
+    </section>
+
+<section class="product-details">
+    <div class="product-image">
+        <img src="images/snowy croissant.jpg" alt="snowy">
+    </div>
+
+    <div class="product-info">
+        <h1>SNOWBERRY CROISSANT</h1>
+        <p class="subtitle">Frosty, Creamy, and Fruity — Savor the Sweet Indulgence of Snowberry Bliss!</p>
+        <p class="price">RM14.00</p>
+
+        <div class="review">
+            <p><strong>Pipseyo</strong> <span>★★★★★</span></p>
+            <p>Ordered the Apricot Tart for my birthday and it's the best matcha cake I ever had. The texture and the richness and sweetness of the cakes is just so good. Would definitely order again from them.</p>
+        </div>
+
+        <ul class="product-details-list">
+            <li>Size: 5”</li>
+            <li>Availability: In stock</li>
+            <li>Halal-Certified</li>
+        </ul>
+
+        <p class="description">Experience the Snowberry Croissant, a delightful croissant filled with luscious cream and juicy strawberry, topped with a snowy dusting of powdered sugar. Each bite offers a perfect blend of sweetness and creaminess, wrapped in flaky, buttery layers that melt in your mouth. </p>
+
+        <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div>
+
+        <button class="add-to-cart-btn">Add to Cart</button>
+        <p class="order-notice">Order before 12AM to receive it next day</p>
+    </div>
+</section>
+
+    </body>
+    
+    </html>

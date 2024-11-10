@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tart</title>
+<style> 
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+    }
+    
+    header {
+        background-color: #8c6138;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header .logo {
+            display: flex;
+            align-items: center;
+        }
+    
+    header .logo img {
+            width: 100px; 
+            margin-right: 10px;
+        }
+
+    header .logo h1 {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    nav .signup-btn {
+        background-color: #ffbf80;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+    
+    .hero {
+        background-color: #e6dccd;
+        padding: 60px;
+        text-align: center;
+        color: #8c6138;
+    }
+    
+    .hero .btn {
+        background-color: #8c6138;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+.product-details {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    max-width: 600px;
+}
+
+.product-info h1 {
+    font-size: 2em;
+    color: #6B4F4F;
+}
+
+.subtitle {
+    color: #8A7A75;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #6B4F4F;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: #FFF3C4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.review strong {
+    color: #6B4F4F;
+}
+
+.product-details-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.extras, .message-card, .quantity {
+    margin-bottom: 15px;
+}
+
+.option-btn {
+    background-color: #6B4F4F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.option-btn:hover {
+    background-color: #8A7A75;
+}
+
+.message-card textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+
+.quantity button {
+    background-color: #6B4F4F;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.quantity span {
+    margin: 0 10px;
+}
+
+.add-to-cart-btn {
+    background-color: #8A2D2D;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #A04545;
+}
+
+.order-notice {
+    text-align: center;
+    color: #8A7A75;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.product-details {
+    display: flex;
+    gap: 15px;
+    padding: 25px;
+    max-width: 1200px;
+    margin: auto;
+    border: 1px solid #E0E0E0;  
+    border-radius: 6px;        
+    background-color: #ffffff;   
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+</style>
+   
+</head>
+<body>
+   
+    <header>
+        <div class="logo">
+            <img src="images/PASTRY Logo.png" alt="Logo"> 
+            <h1>Pastry Heaven</h1>
+        </div>
+        <nav>
+
+            <div class="navbar">
+            <ul>
+              
+                <li><a href="#ourmenu">Our Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#signup" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Our Menu</h2>
+            <p>TART</p>
+          
+        </div>
+    </section>
+
+<section class="product-details">
+    <div class="product-image">
+        <img src="images/fruit tart.jpg" alt="fruit tart">
+    </div>
+
+    <div class="product-info">
+        <h1>FRUIT BLOSSOM TART</h1>
+        <p class="subtitle">Fresh, Vibrant, and Luscious — Discover the Burst of Flavors in the Fruit Blossom Tart!</p>
+        <p class="price">RM15.00</p>
+
+        <div class="review">
+            <p><strong>Nur Rahmah</strong> <span>★★★★★</span></p>
+            <p>The fresh fruit topping is beautifully arranged, adding a burst of vibrant colors and flavors that feel both refreshing and indulgent. The fruits bring a natural sweetness and juiciness that balance perfectly with the rich cream and light glaze. This tart is ideal for anyone who enjoys a light yet satisfying dessert that truly lets fresh, seasonal fruit shine.</p>
+        </div>
+
+        <ul class="product-details-list">
+            <li>Size: 5”</li>
+            <li>Weight: 150g</li>
+            <li>Halal-Certified</li>
+        </ul>
+
+        <p class="description">The Fruit Blossom Tart is a feast for both the eyes and the taste buds. With a crisp, buttery crust as its base, this tart is filled with a smooth vanilla or citrus cream, topped with an artful arrangement of fresh, seasonal fruits.</p>
+
+        <div class="message-card">
+            <label for="message">Complimentary Message Card (Optional)</label>
+            <textarea id="message" placeholder="Buyer's name will not be included unless stated here. We DO NOT write on the tart."></textarea>
+        </div>
+
+        <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div>
+
+        <button class="add-to-cart-btn">Add to Cart</button>
+        <p class="order-notice">Order before 12AM to receive it next day</p>
+    </div>
+</section>
+
+    <section class="product-details">
+        <div class="product-image">
+            <img src="images/choco berry tart.jpg" alt="Choco Berry Tart">
+        </div>
+
+        <div class="product-info">
+            <h1>CHOCO BERRY TART</h1>
+            <p class="subtitle">Luxurious, Fruity, and Floral — Delight in the Beauty of the Berry Blossom Tart!</p>
+            <p class="price">RM35.00</p>
+
+            <div class="review">
+                <p><strong>Aisyaa</strong> <span>★★★★★</span></p>
+                <p>Ordered the Choco Berry Tart for family dinner. Each bite is a wonderful blend of textures — the flaky crust, the silky cream, and the juicy berries create a symphony of flavors that’s both refreshing and indulgent.</p>
+            </div>
+
+            <ul class="product-details-list">
+                <li>Size: 6”</li>
+                <li>Weight: 250g</li>
+                <li>6 – 8 servings</li>
+                <li>Halal-Certified</li>
+            </ul>
+
+            <p class="description">Each bite of the Berry Choco Tart is a symphony of textures and flavors: the crunch of the crust, the cream’s silky texture, the berries’ juicy pop, and the chocolate’s smooth richness. Perfect for celebrations or simply indulging in a touch of luxury, this tart is a dessert lover’s dream, inviting you to savor every luxurious and fruity layer!</p>
+
+            <div class="extras">
+                <label>Candle and Knife</label>
+                <button class="option-btn">Standard</button>
+                <button class="option-btn">No</button>
+            </div>
+
+            <div class="message-card">
+                <label for="message">Complimentary Message Card (Optional)</label>
+                <textarea id="message" placeholder="Buyer's name will only be included if specified here. We can write the name on the tart upon request."></textarea>
+            </div>
+
+            <div class="quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <p class="order-notice">Order before 12AM to receive it next day</p>
+        </div>
+    </section>
+
+<section class="product-details">
+    <div class="product-image">
+        <img src="images/apricot tart.jpg" alt="Apricot Tart">
+    </div>
+
+    <div class="product-info">
+        <h1>APRICOT TART</h1>
+        <p class="subtitle">Sweet, Tangy, and Golden — Experience the Bright Flavors of the Apricot Tart!</p>
+        <p class="price">RM30.00</p>
+
+        <div class="review">
+            <p><strong>Siti Abel</strong> <span>★★★★</span></p>
+            <p>Ordered the Apricot Tart for my birthday and it's the best tart I ever had. Each slice showcases beautifully caramelized apricot slices that burst with sweetness and a hint of tang, embodying the essence of summer in every bite. It’s a must-try for anyone who loves the vibrant taste of fresh apricots and classic pastry!</p>
+        </div>
+
+        <ul class="product-details-list">
+            <li>Size: 6”</li>
+            <li>Weight: 250g</li>
+            <li>6 – 8 servings</li>
+            <li>Halal-Certified</li>
+        </ul>
+
+        <p class="description">This delightful tart features a buttery, flaky crust filled with luscious apricot preserves and topped with fresh, juicy apricot slices. Each bite is a perfect balance of sweetness and tartness, capturing the essence of summer in every slice.</p>
+
+        <div class="extras">
+            <label>Candle and Knife</label>
+            <button class="option-btn">Standard</button>
+            <button class="option-btn">No</button>
+        </div>
+
+        <div class="message-card">
+            <label for="message">Complimentary Message Card (Optional)</label>
+            <textarea id="message" placeholder="Buyer's name will only be included if specified here. We can write the name on the tart upon request."></textarea>
+        </div>
+
+        <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div>
+
+        <button class="add-to-cart-btn">Add to Cart</button>
+        <p class="order-notice">Order before 12AM to receive it next day</p>
+    </div>
+</section>
+
+    </body>
+    
+    </html>

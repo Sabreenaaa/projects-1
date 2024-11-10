@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+<style> 
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+    }
+    
+    header {
+        background-color: #8c6138;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo {
+            display: flex;
+            align-items: center;
+        }
+    
+    header .logo img {
+            width: 100px; 
+            margin-right: 10px;
+        }
+
+    header .logo h1 {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    nav .signup-btn {
+        background-color: #ffbf80;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+    
+    .hero {
+        background-color: #e6dccd;
+        padding: 60px;
+        text-align: center;
+        color: #8c6138;
+    }
+    
+    .hero .btn {
+        background-color: #8c6138;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .products {
+        padding: 40px;
+        text-align: center;
+    }
+    
+    .products h2 {
+        color: #8c6138;
+        margin-bottom: 30px;
+    }
+    
+    .product-grid {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .product-item {
+        background-color: #fff;
+        border-radius: 8px;
+        width: 200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .product-item img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    
+    .product-item h3 {
+        margin: 10px 0;
+        font-size: 16px;
+        color: #333;
+    }
+    
+    .product-item p {
+        color: #666;
+        font-size: 14px;
+    }
+    
+    .add-to-cart-btn {
+        background-color: #8c6138;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    
+    .add-to-cart-btn:hover {
+        background-color: #ffbf80;
+    }
+
+    .about {
+            background-color: #f0e5dc;
+            padding: 40px;
+            text-align: center;
+            color: #8c6138;
+        }
+        
+    .about p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 16px;
+            color: #666;
+        }
+
+</style>
+   
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="images/PASTRY Logo.png" alt="Logo"> 
+            <h1>Pastry Heaven</h1>
+        </div>
+        <nav>
+
+            <div class="navbar">
+            <ul>
+              
+                <li><a href="#ourmenu">Our Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#signup" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Signature Collection</h2>
+            <p>Discover the heart of our bakery with the Signature Collection, where our passion for quality meets culinary artistry. These are the creations that our chefs take the most pride in—distinctive, refined, and unforgettable. From intricate details to rich flavors, each pastry tells a story of dedication and creativity.</p>
+          
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Our Bestsellers</h2>
+        <div class="product-grid">
+          
+            <div class="product-item">
+                <img src="images/fruit tart.jpg" alt="fruit tart">
+                <h3><a href="#product1">Fruit Blossom Tart</a></h3>
+                <p>From RM15.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          
+            <div class="product-item">
+                <img src="images/pistachio croissant.jpg" alt="pistachio croissant">
+                <h3><a href="#product2">Pistachio Croissant</a></h3>
+                <p>RM15.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="images/white cake.jpg" alt="white cake">
+                <h3><a href="#product3">Cloudy Petal Cake</a></h3>
+                <p>RM149.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+           
+            <div class="product-item">
+                <img src="images/sr2.jpg" alt="sr">
+                <h3><a href="#product4">Blushberry Roll</a></h3>
+                <p>RM15.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Welcome to Pastry Heaven! We are dedicated to creating delightful pastries using the finest ingredients. Our passion for baking is reflected in each and every product, ensuring a heavenly experience for all our customers.</p>
+    </section>
+
+</body>
+</html>

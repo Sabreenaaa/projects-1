@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiss_roll</title>
+<style> 
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+    }
+    
+    header {
+        background-color: #8c6138;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header .logo {
+            display: flex;
+            align-items: center;
+        }
+    
+    header .logo img {
+            width: 100px; 
+            margin-right: 10px;
+        }
+
+    header .logo h1 {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    nav .signup-btn {
+        background-color: #ffbf80;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+    
+    .hero {
+        background-color: #e6dccd;
+        padding: 60px;
+        text-align: center;
+        color: #8c6138;
+    }
+    
+    .hero .btn {
+        background-color: #8c6138;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+.product-details {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    max-width: 600px;
+}
+
+.product-info h1 {
+    font-size: 2em;
+    color: #6B4F4F;
+}
+
+.subtitle {
+    color: #8A7A75;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #6B4F4F;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: #FFF3C4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.review strong {
+    color: #6B4F4F;
+}
+
+.product-details-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.quantity {
+    margin-bottom: 15px;
+}
+
+.option-btn {
+    background-color: #6B4F4F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.option-btn:hover {
+    background-color: #8A7A75;
+}
+
+.message-card textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+
+.quantity button {
+    background-color: #6B4F4F;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.quantity span {
+    margin: 0 10px;
+}
+
+.add-to-cart-btn {
+    background-color: #8A2D2D;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #A04545;
+}
+
+.order-notice {
+    text-align: center;
+    color: #8A7A75;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.product-details {
+    display: flex;
+    gap: 15px;
+    padding: 25px;
+    max-width: 1200px;
+    margin: auto;
+    border: 1px solid #E0E0E0;  
+    border-radius: 6px;        
+    background-color: #ffffff;   
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+</style>
+   
+</head>
+<body>
+   
+    <header>
+        <div class="logo">
+            <img src="images/PASTRY Logo.png" alt="Logo"> 
+            <h1>Pastry Heaven</h1>
+        </div>
+        <nav>
+
+            <div class="navbar">
+            <ul>
+              
+                <li><a href="#ourmenu">Our Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#signup" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Our Menu</h2>
+            <p>SWISS ROLL</p>
+          
+        </div>
+    </section>
+
+<section class="product-details">
+    <div class="product-image">
+        <img src="images/sr1.jpg" alt="matcha sr">
+    </div>
+
+    <div class="product-info">
+        <h1>STRAWBERRY MATCHA ROLL</h1>
+        <p class="subtitle">Creamy, and Whimsical — Savor the Delight of the Strawberry Matcha Swiss Roll!</p>
+        <p class="price">RM20.00</p>
+
+        <div class="review">
+            <p><strong>Azreeq Affnan</strong> <span>★★★★★</span></p>
+            <p>I loved the elegant presentation — the swirl of green and pink made it a perfect centerpiece for my afternoon tea gathering. It was a hit with my guests, who were equally impressed by the delicious taste and beautiful look of this dessert.</p>
+        </div>
+
+        <ul class="product-details-list">
+            <li>Size: 10”</li>
+            <li>Availability: In stock</li>
+            <li>Halal-Certified</li>
+        </ul>
+
+        <p class="description">The Strawberry Matcha Swiss Roll is a delightful dessert that artfully marries the rich, earthy tones of matcha with the sweet, refreshing flavor of ripe strawberries. This stunning roll features a soft, sponge-like cake infused with matcha powder, offering a vibrant green color and a subtle depth that sets the stage for its fruity counterpart.</p>
+
+        <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div>
+
+        <button class="add-to-cart-btn">Add to Cart</button>
+        <p class="order-notice">Order before 12AM to receive it next day</p>
+    </div>
+</section>
+
+    <section class="product-details">
+        <div class="product-image">
+            <img src="images/sr2.jpg" alt="sr">
+        </div>
+
+        <div class="product-info">
+            <h1>BLUSHBERRY ROLL</h1>
+            <p class="subtitle">Sweet, Creamy, and Enchanting — Discover the Bliss of the Blushberry Roll!</p>
+            <p class="price">RM15.00</p>
+
+            <div class="review">
+                <p><strong>Atysh Achureen</strong> <span>★★★★★</span></p>
+                <p>It was simply divine! From the moment I saw it, the vibrant blush color and the beautiful presentation made it impossible to resist. The cake was incredibly light and fluffy, melting in my mouth with each bite. I can't wait to order it again!</p>
+            </div>
+
+            <ul class="product-details-list">
+                <li>Size: 10”</li>
+                <li>Availability: In stock</li>
+                <li>Halal-Certified</li>
+            </ul>
+
+            <p class="description">The Blushberry Roll is a delightful dessert that artfully combines the sweetness of ripe berries with a light, fluffy sponge cake. This enchanting roll features a soft and tender cake infused with a medley of berry flavors, creating a beautiful blush color that is as appealing to the eyes as it is to the palate.</p>
+
+            <div class="quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <p class="order-notice">Order before 12AM to receive it next day</p>
+        </div>
+    </section>
+
+<section class="product-details">
+    <div class="product-image">
+        <img src="images/sr4.jpg" alt="sr">
+    </div>
+
+    <div class="product-info">
+        <h1>NUTTYRASP ROLL</h1>
+        <p class="subtitle">A heavenly blend of airy swiss roll cake, luscious raspberry cream, and a crunchy nut topping that promises a delightful treat for your senses!</p>
+        <p class="price">RM18.00</p>
+
+        <div class="review">
+            <p><strong>Iven</strong> <span>★★★★★</span></p>
+            <p>The Nutty Raspberry Roll is an absolute showstopper! From the first bite, the light and fluffy sponge cake melts in your mouth, perfectly complemented by the rich raspberry cream filling that bursts with flavor.</p>
+        </div>
+
+        <ul class="product-details-list">
+            <li>Size: 10”</li>
+            <li>Availability: In stock</li>
+            <li>Halal-Certified</li>
+        </ul>
+
+        <p class="description">NuttyRasp Roll is an enchanting dessert that combines the rich flavors of raspberry and cream in a delightful Swiss roll. This treat features a light, airy sponge cake that’s expertly rolled to encase a luscious creamy filling, infused with the vibrant essence of fresh raspberries.
+
+            Atop the roll, delicate waves of raspberry cream are piped artistically, creating an inviting visual appeal. To add texture and flavor, the roll is generously sprinkled with crunchy nuts, which complement the sweetness of the raspberries and the smoothness of the cream.</p>
+
+        <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div>
+
+        <button class="add-to-cart-btn">Add to Cart</button>
+        <p class="order-notice">Order before 12AM to receive it next day</p>
+    </div>
+</section>
+
+    </body>
+    
+    </html>

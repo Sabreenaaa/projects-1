@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eclairs</title>
+<style> 
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+    }
+    
+    header {
+        background-color: #8c6138;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header .logo {
+            display: flex;
+            align-items: center;
+        }
+    
+    header .logo img {
+            width: 100px; 
+            margin-right: 10px;
+        }
+
+    header .logo h1 {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    nav .signup-btn {
+        background-color: #ffbf80;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+    
+    .hero {
+        background-color: #e6dccd;
+        padding: 60px;
+        text-align: center;
+        color: #8c6138;
+    }
+    
+    .hero .btn {
+        background-color: #8c6138;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+.product-details {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    max-width: 600px;
+}
+
+.product-info h1 {
+    font-size: 2em;
+    color: #6B4F4F;
+}
+
+.subtitle {
+    color: #8A7A75;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #6B4F4F;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: #FFF3C4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.review strong {
+    color: #6B4F4F;
+}
+
+.product-details-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.quantity {
+    margin-bottom: 15px;
+}
+
+.option-btn {
+    background-color: #6B4F4F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.option-btn:hover {
+    background-color: #8A7A75;
+}
+
+.message-card textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+
+.quantity button {
+    background-color: #6B4F4F;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.quantity span {
+    margin: 0 10px;
+}
+
+.add-to-cart-btn {
+    background-color: #8A2D2D;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #A04545;
+}
+
+.order-notice {
+    text-align: center;
+    color: #8A7A75;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.product-details {
+    display: flex;
+    gap: 15px;
+    padding: 25px;
+    max-width: 1200px;
+    margin: auto;
+    border: 1px solid #E0E0E0;  
+    border-radius: 6px;        
+    background-color: #ffffff;   
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+</style>
+   
+</head>
+<body>
+   
+    <header>
+        <div class="logo">
+            <img src="images/PASTRY Logo.png" alt="Logo"> 
+            <h1>Pastry Heaven</h1>
+        </div>
+        <nav>
+
+            <div class="navbar">
+            <ul>
+              
+                <li><a href="#ourmenu">Our Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#signup" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Our Menu</h2>
+            <p>ECLAIRS</p>
+          
+        </div>
+    </section>
+
+<section class="product-details">
+    <div class="product-image">
+        <img src="images/lemon eclairs.jpg" alt="lemon eclairs">
+    </div>
+
+    <div class="product-info">
+        <h1>Lemon Curlicue Éclair</h1>
+        <p class="subtitle">Zesty, Creamy, and Indulgent — Experience the Refreshing Burst of the Lemon Éclair!</p>
+        <p class="price">RM7.00</p>
+
+        <div class="review">
+            <p><strong>Abid</strong> <span>★★★★★</span></p>
+            <p>I recently ordered the Lemon Éclair, and I can't stop raving about it! From the moment I unwrapped it, the fresh aroma of citrus filled the air, hinting at the delightful experience to come. The pastry shell was light and perfectly crisp, providing a satisfying crunch that complemented the creamy lemon filling beautifully.</p>
+        </div>
+
+        <ul class="product-details-list">
+            <li>Size: 4”</li>
+            <li>Availability: In stock</li>
+            <li>Halal-Certified</li>
+        </ul>
+
+        <p class="description">This delightful éclair features a light and airy pastry shell filled with a luscious lemon cream, topped with a wavy swirl of zesty icing. Each bite delivers a perfect balance of tart and sweet flavors, making it a refreshing treat that brightens any dessert table. The elegant design adds a touch of sophistication, making the Lemon Éclair a must-try for citrus lovers!</p>
+
+        <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div>
+
+        <button class="add-to-cart-btn">Add to Cart</button>
+        <p class="order-notice">Order before 12AM to receive it next day</p>
+    </div>
+</section>
+
+    <section class="product-details">
+        <div class="product-image">
+            <img src="images/fig eclairs.jpg" alt="fig eclairs">
+        </div>
+
+        <div class="product-info">
+            <h1>FIGS VELVET ECLAIRS</h1>
+            <p class="subtitle">Fruity, Creamy, and Indulgent — Dive into the Decadence of the Fig Éclair!</p>
+            <p class="price">RM9.00</p>
+
+            <div class="review">
+                <p><strong>AminHany</strong> <span>★★★★★</span></p>
+                <p>I recently ordered the Fig Éclair, and it was an absolute delight! From the moment I took my first bite, I was captivated by the harmonious blend of flavors. I’ll definitely be back for more!</p>
+            </div>
+
+            <ul class="product-details-list">
+                <li>Size: 4”</li>
+                <li>Availability: In stock</li>
+                <li>Halal-Certified</li>
+            </ul>
+
+            <p class="description">The Fig Éclair is a true masterpiece of flavor and presentation, combining layers of luscious purple cream with the natural sweetness of fresh figs. Topped with elegantly piped cream, this éclair is not only a treat for the palate but also a visual delight. It embodies the essence of indulgence, making it the perfect dessert for any special occasion or a luxurious everyday treat.</p>
+
+            <div class="quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <p class="order-notice">Order before 12AM to receive it next day</p>
+        </div>
+    </section>
+
+<section class="product-details">
+    <div class="product-image">
+        <img src="images/goldberry eclairs.jpg" alt="goldberry">
+    </div>
+
+    <div class="product-info">
+        <h1>GOLDBERRY ECLAIRS</h1>
+        <p class="subtitle">Fruity, Creamy, and Opulent — Delight in the Splendor of the Goldberry Éclair!</p>
+        <p class="price">RM12.00</p>
+
+        <div class="review">
+            <p><strong>Amin Othman</strong> <span>★★★★★</span></p>
+            <p>I recently treated myself to the Goldberry Éclair, and it was an absolutely delightful experience! The moment I unwrapped it, the vibrant colors and the shimmer of the gold foil caught my eye. Overall, I highly recommend the Goldberry Éclair to anyone looking for a sophisticated dessert that doesn’t skimp on flavor.</p>
+        </div>
+
+        <ul class="product-details-list">
+            <li>Size: 4”</li>
+            <li>Availability: In stock</li>
+            <li>Halal-Certified</li>
+        </ul>
+
+        <p class="description">The Goldberry Éclair is a stunning confection that redefines dessert indulgence. Crafted from delicate choux pastry, this éclair features a velvety cream filling that harmonizes beautifully with the bright, tart notes of fresh raspberries. Each éclair is expertly piped with a wavy cream that adds a playful elegance, creating an inviting texture that begs to be savored.</p>
+
+        <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div>
+
+        <button class="add-to-cart-btn">Add to Cart</button>
+        <p class="order-notice">Order before 12AM to receive it next day</p>
+    </div>
+</section>
+
+    </body>
+    
+    </html>

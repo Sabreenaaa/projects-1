@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #8c6138;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+    
+    header .logo img {
+            width: 100px; 
+            margin-right: 10px;
+        }
+
+    header .logo h1 {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav .signup-btn {
+            background-color: #ffbf80;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background-color: #e6dccd;
+            padding: 60px;
+            text-align: center;
+            color: #8c6138;
+        }
+
+        .hero .btn {
+            background-color: #8c6138;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            background-color: #fff;
+        }
+
+        .category-card {
+            width: 180px;
+            background-color: #6B4F4F;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #fff;
+        }
+
+        .category-card h3 {
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+            .categories {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .category-card {
+                width: 150px;
+            }
+        }
+
+        #tart-card a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #croissant-card a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #eclairs-card a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #cake-card a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #swiss_roll-card a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        .menu-content h2 {
+            text-align: center;
+            color: #8c6138;
+            margin-bottom: 20px;
+        }
+
+        .menu-category .category {
+             margin-bottom: 20px; 
+        }
+
+        .menu-category h3 {
+            font-size: 1.2em;
+            color: #8c6138;
+            margin-bottom: 10px;
+        }
+
+        .menu-category ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block; 
+            text-align: left; 
+        }
+
+        .menu-category ul li {
+            color: #333;
+            font-size: 1em;
+            padding: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .menu-content {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/PASTRY Logo.png" alt="Logo"> 
+            <h1>Pastry Heaven</h1>
+        </div>
+        <nav>
+            <ul>
+
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#signup" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Our Menu</h2>
+            <p>Starts your day with sweets!</p>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="category-card">
+            <img src="images/tarts.jpg" alt="Tart">
+            <div id="tart-card">
+               <h3><a href="tart.html">Tarts</a></h3>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="images/croissants.jpg" alt="Croissant">
+            <div id="croissant-card">
+                <h3><a href="croissant.html">Croissants</a></h3>
+             </div>
+        </div>
+
+        <div class="category-card">
+            <img src="images/berry eclairs.jpg" alt="Eclairs">
+            <div id="eclairs-card">
+                <h3><a href="eclairs.html">Eclairs</a></h3>
+             </div>
+        </div>
+
+        <div class="category-card">
+            <img src="images/cakes.jpg" alt="Cakes">
+            <div id="cake-card">
+                <h3><a href="cake.html">Cakes</a></h3>
+             </div>
+        </div>
+
+        <div class="category-card">
+            <img src="images/swiss rolls.jpg" alt="swiss roll">
+            <div id="swiss_roll-card">
+                <h3><a href="swiss roll.html">Swiss Rolls</a></h3>
+             </div>
+        </div>
+    </section>
+
+    <section class="menu-list">
+        <div class="menu-content">
+            <h2>Our Menu</h2>
+            <div class="menu-category">
+                <div class="category">
+                    <h3>Tarts</h3>
+                    <ul>
+                        <li>Fruit Blossom Tart</li>
+                        <li>Choco Berry Tart</li>
+                        <li>Apricot Tart</li>
+                    </ul>
+                </div>
+    
+                <div class="category">
+                    <h3>Croissants</h3>
+                    <ul>
+                        <li>Pistachio Croissant</li>
+                        <li>Crème de Cocoa Croissant</li>
+                        <li>Snowberry Croissant</li>
+                    </ul>
+                </div>
+
+                <div class="category">
+                    <h3>Eclairs</h3>
+                    <ul>
+                        <li>Lemon Curlicue Eclair</li>
+                        <li>Figs Velvet Eclair</li>
+                        <li>Goldberry Eclair</li>
+                    </ul>
+                </div>
+    
+                <div class="category">
+                    <h3>Cakes</h3>
+                    <ul>
+                        <li>Blood Orange Cake</li>
+                        <li>Blacky Flowery Cake</li>
+                        <li>Cloudy Petal Cake</li>
+                    </ul>
+                </div>
+    
+                
+    
+                <div class="category">
+                    <h3>Swiss Roll</h3>
+                    <ul>
+                        <li>Matcha Strawberry Roll</li>
+                        <li>Blushberry Roll</li>
+                        <li>NuttyRasp Roll</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
